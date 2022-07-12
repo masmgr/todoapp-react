@@ -1,3 +1,4 @@
+/* eslint-disable react/require-default-props */
 import React from "react";
 import "./button.css";
 
@@ -27,7 +28,8 @@ interface ButtonProps {
 /**
  * Primary UI component for user interaction
  */
-const Button = ({
+// eslint-disable-next-line import/prefer-default-export, react/function-component-definition
+export const Button = ({
   primary = false,
   size = "medium",
   backgroundColor,
@@ -44,11 +46,10 @@ const Button = ({
         " "
       )}
       style={{ backgroundColor }}
+      // eslint-disable-next-line react/jsx-props-no-spreading
       {...props}
     >
       {label}
     </button>
   );
 };
-
-export default Button;

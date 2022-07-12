@@ -7,7 +7,8 @@ type User = {
   name: string;
 };
 
-const Page = () => {
+// eslint-disable-next-line react/function-component-definition, import/prefer-default-export
+export const Page = () => {
   const [user, setUser] = React.useState<User>();
 
   return (
@@ -40,7 +41,7 @@ const Page = () => {
         <ul>
           <li>
             Use a higher-level connected component. Storybook helps you compose
-            such data from the "args" of child component stories
+            such data from the &quot;args&quot; of child component stories
           </li>
           <li>
             Assemble data in the page component from your services. You can mock
@@ -89,5 +90,3 @@ const Page = () => {
     </article>
   );
 };
-
-export default Page;

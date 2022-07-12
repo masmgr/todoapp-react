@@ -1,4 +1,5 @@
 import React from "react";
+// eslint-disable-next-line import/no-extraneous-dependencies
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
 import { Header } from "./Header";
@@ -12,6 +13,7 @@ export default {
   },
 } as ComponentMeta<typeof Header>;
 
+// eslint-disable-next-line react/function-component-definition, react/jsx-props-no-spreading
 const Template: ComponentStory<typeof Header> = (args) => <Header {...args} />;
 
 export const LoggedIn = Template.bind({});
